@@ -2,6 +2,8 @@
 
 这个项目是一个 HTML + TailwindCSS 骨架结构和环境，用来快速的编写基于 TailwindCSS 的 HTML 页面。可以把 HTML 中的相关 Tailwind CSS Class 全部抽取并且实时编译成可以用的原生 CSS 代码。 支持页面监控和即时预览，每次修改 HTML 文件都会重新编译。配合 VSCode 的 Preview 功能可以即时查看页面变动。
 
+![image](https://github.com/user-attachments/assets/2c0bbbba-98ea-4f36-bc55-274ef1e8e29c)
+
 # 依赖
 
 - TailwindCSS V3
