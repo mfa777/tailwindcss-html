@@ -1,0 +1,31 @@
+/* This include all tailwindcss classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Below this line */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.1);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
