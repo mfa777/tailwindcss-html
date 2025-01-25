@@ -9,6 +9,12 @@
 
 TailwindCSS V 4.0.0 对于 CLI 做出更改，会自动检测项目内需要编译的源文件，不再使用 config 指定。实际测试这个功能存在 BUG。
 
+# 使用
+
+1. 切换到根目录，执行 `npm install`
+2. 执行 `npm start dev`
+3. 修改 public/index.html 同时开启 VSCode 的 Preview 功能即可实时查看更改效果。
+
 # 各个文件的作用
 
 ## tailwind.config.js
@@ -39,3 +45,9 @@ TailwindCSS V 4.0.0 对于 CLI 做出更改，会自动检测项目内需要编�
 ## index.html
 
 这个是主页文件，大部分代码编辑工作将在这里完成。注意每次修改后，node 会自动更新 style.css 文件，但是 VSCode 的 Preview 功能可能会缓存 css 文件，所以有时候需要刷新才会看到最新的改变。
+
+# 为什么不用 Play CDN
+
+`<script src="https://cdn.tailwindcss.com"></script>`
+
+Play CDN 在开发时候挺好用，但部署上线时候会有些麻烦。你不能把 Play CDN 用于生产环境，因为这个文件巨大加载很慢。
